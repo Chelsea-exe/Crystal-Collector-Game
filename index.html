@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Crystal Game</title>
+</head>
+<body>
+<div class="Header">
+    <h1>The Crystal Collector</h1>
+</div>
+<div class="Directions">
+    <h2>The Rules</h2>
+    <br>
+    <ol>
+        <p>You will be given a random number at the start of the game.<span>"Number to Get"</span></p>
+        <p>Here are four crystals right below. GOOD LUCK!</p>
+    <br>
+        <ul>
+                <li id="purple">Purple</li>
+                <li id="pink">Pink</li>
+                <li id="orange">Orange</li>
+                <li id="blue">Blue</li>        
+        </ul>
+        <br>
+        <p>Clicking on the crystal, a specific amount of point will be added to your score</p>
+        <p>You win the game by matching your score to the random number.</p>
+        <p>You lose if your score is more than the random number.</p>
+        <p>The value of each crystal is hidden until you click on it.</p>
+        <p>When the game starts, the game will change the value of each crystal.</p>
+    </ol>
+</div>
+<div class="crystals">
+        <img src="./assets/images/purple crystal.jpg" class="Image" id="PurpleC">
+        <img src="./assets/images/pink crystal.jpg" class="Image" id="PinkC">
+        <img src="./assets/images/orange crystal.jpg" class="Image" id="OrangeC">
+        <img src="./assets/images/blue crystal.jpg" class="Image" id="BlueC">
+    </div>
+<div class="Match">
+    <h2>Number to Match:
+        <span id="random"></span>
+    </h2>
+</div>
+<div class="WinandLosses">
+    <h2>Wins:
+        <span id="Wins"></span>
+        <br>
+        <br>
+        Losses:
+        <span id="Losses"></span>
+    </h2>
+</div>
+<div class="Total">
+    <h3>Total Score:
+        <span id="Totalscore"></span>
+    </h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: aqua;
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat;
+}
+
+div{
+    background-color: orchid;
+    margin: 20px;
+    width: 50%;
+    border: 5px;
+    border-color: salmon;
+    padding: 15px;
+}
+
+h1, h2, h3, span{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 24px;
+}
+ol{
+    list-style: inside;
+}
+ul{
+    list-style: inside;
+}
+.Image{
+    height: 80px;
+    width: 80px;
+    padding-right: 55px;
+    padding-left: 51px;
+}
+.crystals{
+    
+}
+.Directions{
+    width: 580px;
+}
+.WinandLosses{
+    background-color: mediumvioletred;
+    width: 200px;
+}
+.Match{
+    background-color: yellow;
+    width: 200px;
+    height: 80px;
+}
+.Total{
+    background-color: lightcoral;
+
+}
+.Header{
+    background-color: lime;
+    font-style: italic;
+    width: 300px;
+}
