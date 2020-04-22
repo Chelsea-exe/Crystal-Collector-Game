@@ -1,6 +1,5 @@
 body{
     font-family: 'Playfair Display', serif;
-    background-color: aqua;
     background-image: url(../images/background.jpg);
     background-repeat: repeat;
 }
@@ -32,6 +31,7 @@ ul{
     width: 80px;
     padding-right: 55px;
     padding-left: 51px;
+    border-radius: 20px;
 }
 .crystals{
     
