@@ -1,8 +1,11 @@
 html{
-    font-family: 'Quicksand', sans-serif;
-    background-image: url(../images/photo-of-blue-pink-and-green-led-light-775907.jpg);
-    background-repeat: no-repeat;
-    background-size: 229vh;
+    background-image: url(../images/spikes.png);
+    background-repeat: repeat;
+    background-size: 50vh;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* div{
@@ -13,16 +16,31 @@ html{
     border-color: salmon;
     padding: 15px;
 } */
-#game-title {
+/* #game-title {
     font-size: 48px;
     color: white;
     margin-left: 250px;
+} */
+/* .container {
+    background-color: aqua;
+} */
+.jumbotron-fluid {
+    background-color: rgb(84, 156, 224);
 }
-.Header{
-    background-color: rgb(0, 219, 0);
+
+.header {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-left: 250px;
+    font-size: 60px;
+}
+#summary-header {
     font-family: 'Playfair Display', serif;
 }
-h1, h2, h3, span{
+.summary-body {
+    font-family: 'Quicksand', sans-serif;
+}
+h1, h2, h3, h4, span{
     font-weight: bold;
 }
 ol{
@@ -31,15 +49,41 @@ ol{
 ul{
     list-style: inside;
 }
-.Image{
-    height: 80px;
-    width: 80px;
-    padding-right: 55px;
-    padding-left: 51px;
-    border-radius: 20px;
+.crystal-card {
+    background-color: rgb(241, 240, 241);
 }
-.Directions{
-    width: 580px;
+.image{
+    height: 9vh;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.directions{
+    width: fit-content;
+}
+.match {
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+}
+#random {
+    font-family: 'Quicksand', sans-serif;
+}
+.scoreboard {
+    margin-top: 20px;
+    background-color: rgb(241, 240, 241);
+}
+#score-header {
+    font-family: 'Playfair Display', serif; 
+    margin-left: 15px;  
+}
+.score-body {
+    background-color: rgba(0, 255, 255, 0);
+}
+.win-loss {
+    font-family: 'Quicksand', sans-serif;
+}
+#wins,
+#losses {
+    font-weight: bold;
 }
 .WinandLosses{
     background-color: mediumvioletred;
@@ -54,3 +98,4 @@ ul{
     background-color: lightcoral;
 
 }
+

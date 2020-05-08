@@ -8,64 +8,61 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Crystal Game</title>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid Header">
-        <div class="container">
-          <h1 id="game-title">The Crystal Collector Game</h1>
-        </div>
-      </div>
-<!-- <div class="Header">
-    <h1>The Crystal Collector</h1>
-</div>
-<div class="Directions">
-    <h2>The Rules</h2>
-    <br>
-    <ol>
-        <p>You will be given a random number at the start of the game.<span>"Number to Get"</span></p>
-        <p>Here are four crystals right below. GOOD LUCK!</p>
-    <br>
-        <ul>
-                <li id="purple">Purple</li>
-                <li id="pink">Pink</li>
-                <li id="orange">Orange</li>
-                <li id="blue">Blue</li>        
-        </ul>
-        <br>
-        <p>Clicking on the crystal, a specific amount of point will be added to your score</p>
-        <p>You win the game by matching your score to the random number.</p>
-        <p>You lose if your score is more than the random number.</p>
-        <p>The value of each crystal is hidden until you click on it.</p>
-        <p>When the game starts, the game will change the value of each crystal.</p>
-    </ol>
-</div>
-<div class="crystals">
-        <img src="./assets/images/purple-crystal.jpg" class="Image" id="purple">
-        <img src="./assets/images/pink-crystal.jpg" class="Image" id="pink">
-        <img src="./assets/images/orange-crystal.jpg" class="Image" id="orange">
-        <img src="./assets/images/blue-crystal.jpg" class="Image" id="blue">
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="header-container">
+              <h1 class="header">The Crystal Collector</h1>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-4" id="first">
+                <div class="card">
+                    <div class="card-header game-summary">
+                        <h4 id="summary-header">Game Summary</h4>
+                    </div>
+                    <div class="summary-body">
+                        <p>You will be given a random number at the start of the game. Click on the crystal, a specific amount of point will be added to your score
+                    You win the game by matching your score to the random number.
+                    You lose if your score is more than the random number.
+                    The value of each crystal is hidden until you click on it.
+                    When the game starts, the game will change the value of each crystal.</p>                    
+                    </div>
+                </div>
+                <div class="card match">
+                    <h4 class="card-header match-header">Number To Match</h4>
+                        <div class="card-body match-body">
+                            <span id="random"></span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-4" id="second">
+                <div class="card crystal-card">
+                    <div class="card-body">
+                        <div class="crystals">
+                            <img src="./assets/images/purple-crystal.jpg" class="image" id="purple">
+                            <img src="./assets/images/pink-crystal.jpg" class="image" id="pink">
+                            <img src="./assets/images/orange-crystal.jpg" class="image" id="orange">
+                            <img src="./assets/images/blue-crystal.jpg" class="image" id="blue">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card scoreboard">
+                      <div class="board-header">
+                          <h4 id="score-header">Scoreboard</h4>
+                      </div>
+                      <div class="card win-loss">
+                        <div class="card-body win-body">
+                                <h5 id="wins">Wins:<span id="wins"></span></h5>
+                                <h5 id="losses">Losses:<span id="losses"></span></h5>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
     </div>
-<div class="Match">
-    <h2>Number to Match:
-        <span id="random"></span>
-    </h2>
-</div>
-<div class="WinandLosses">
-    <h2>Wins:
-        <span id="Wins"></span>
-        <br>
-        <br>
-        Losses:
-        <span id="Losses"></span>
-    </h2>
-</div>
-<div class="Total">
-    <h3>Total Score:
-        <span id="Totalscore"></span>
-    </h3>
-</div> -->
 </body>
 </html>
