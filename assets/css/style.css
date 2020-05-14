@@ -60,9 +60,16 @@ ul{
 .directions{
     width: fit-content;
 }
+.card-header,
+.board-header {
+    background-color: rgb(226, 248, 237);
+}
 .match {
     font-family: 'Playfair Display', serif;
     margin-top: 20px;
+}
+.match-body {
+    background-color: rgb(252, 218, 126);
 }
 #random {
     font-family: 'Quicksand', sans-serif;
@@ -80,9 +87,14 @@ ul{
 }
 .win-loss {
     font-family: 'Quicksand', sans-serif;
+    background-color: rgb(255, 181, 224);
 }
-#wins,
-#losses {
+#winboard,
+#lossboard {
+    font-weight: bold;
+}
+#total {
+    margin-left: 20px;
     font-weight: bold;
 }
 .WinandLosses{

@@ -1,67 +1,95 @@
-//While typing the javascript I gotten errors of line 5 [setting up the range value of numbers] stating the ) isn't expected but per to my research the work we've done the symbol is need
-//I tried to debugging it, starting all over, redoing the javascript code, I didn't finish with the values of the rest of the crystals since I can't
-//figure out what "text" wasn't added correctly
-
-// var random = Math.floor()*50+1)
-
-// $('#random').text(Random);
-
-// var number1 = Math.floor(Math.random()*24+1);
-// var number2 = Math.floor(Math.random()*24+1);
-// var number3 = Math.floor(Math.random()*24+1);
-// var number4 = Math.floor(Math.random()*24+1);
-
-// var total = 0;
-// var wins = 0;
-// var loses = 0;
-// $('#Wins').html(Wins);
-// $('#Losses').html(Losses);
-
-// function reset(){
-//     Random = Math.floor(Math.random()*50+1);
-//     console.log(Random)
-//     $('#random').html(Random);
-//     number1 = Math.floor(Math.random()*24+1);
-//     number2 = Math.floor(Math.random()*24+1);
-//     number3 = Math.floor(Math.random()*24+1);
-//     number4 = Math.floor(Math.randon()*24+1);
-//     userTotal = 0;
-//     $('#Totalscore').html(userTotal);
-
-// function yes(){
-// alert("YOU'RE A WINNER!!");
-//         wins++;
-//         $('#Wins').html(wins);
-//         reset();
-//     }
-// function welp(){
-// alert("Welp, a Lose!");
-//     losses++;
-//     $('#Losses').html(losses);
-//     reset()
-// }
-// $('#purpleC').on ('click', function(){
-//     userTotal = userTotal + number1;
-//     console.log("New Total = " + userTotal);
-//     $('#Totalscore').html(userTotal);
-//         if (userTotal === Random){
-//           yes();
-//         }
-//         else if ( userTotal > Random){
-//           welp();
-//         }   
-//   })  
-// }
+ var targetNumber;
+ var total = 0;
+ var wins = 0;
+ var losses = 0;
+ var randomNum = Math.floor(Math.random()*71+29);
 
 
-$(document).ready(function() {
+ var gamePurple = Math.floor(Math.random()*14+1);
+ var gamePink = Math.floor(Math.random()*14+1);
+ var gameOrange = Math.floor(Math.random()*14+1);
+ var gameBlue = Math.floor(Math.random()*14+1);
 
-  // alert("!!!");
-  var targetNumber = "";
-  $("#random").text(targetNumber);
 
-  var wins = 0;
-  var losses = 0;
-  var numberCounter = 0;
-  var options = [3, 11, 8, 19];
-})
+
+ $(document).ready(function() {
+
+  $('#random').html(randomNum);
+  $('#wins').html(wins);
+  $('#losses').html(losses);
+
+  function gameWinner() {
+      wins++;
+      $('#wins').html(wins);
+      alert("Congrats you won the Crystal Collecting game");
+      gameReset();
+  }
+
+
+  function gameLoser() {
+      losses++;
+      $('#losses').html(losses);
+      alert("Sorry you lost the Crystal Collecting game");
+      gameReset();
+
+  }
+
+  function gameReset() {
+    randomNum = Math.floor(Math.random()*71+29);
+    $('#random').html(randomNum);
+    gamePurple = Math.floor(Math.random()*14+1);
+    gamePink = Math.floor(Math.random()*14+1);
+    gameOrange = Math.floor(Math.random()*14+1);
+    gameBlue = Math.floor(Math.random()*14+1);
+  }
+
+  $('#purple').click(function() {
+    total = total + gamePurple;
+    // console.log("purple crystal was pressed");
+    $('#totalscore').html(total);
+    if (total === randomNum) {
+        gameWinner();
+    }
+    else if (total > randomNum) {
+        gameLoser();
+    }
+    console.log("purple crystal was tallied")
+  })
+
+  $('#pink').click(function() {
+      total = total + gamePink;
+      $('#totalscore').html(total);
+      if (total === randomNum) {
+          gameWinner();
+      }
+      else if (total > randomNum) {
+          gameLoser();
+      }
+      console.log("pink crystal was tallied")
+  })
+  
+  $('#orange').click(function() {
+      total = total + gameOrange;
+      $('#totalscore').html(total);
+      if (total === randomNum) {
+          gameWinner();
+      }
+      else if (total > randomNum) {
+          gameLoser();
+      }
+      console.log("orange crystal was tallied")
+  })
+
+  $('#blue').click(function() {
+      total = total + gameBlue;
+      $('#totalscore').html(total);
+      if (total === randomNum) {
+          gameWinner();
+      }
+      else if (total > randomNum) {
+          gameLoser();
+      }
+      console.log("blue crystal was taliied")
+  })
+
+ });
