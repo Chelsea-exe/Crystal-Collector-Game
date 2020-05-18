@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid crystal-jumbotron">
             <div class="header-container">
               <h1 class="header">The Crystal Collector</h1>
             </div>
@@ -25,11 +25,16 @@
                         <h4 id="summary-header">Game Summary</h4>
                     </div>
                     <div class="summary-body">
-                        <p>You will be given a random number at the start of the game. Click on the crystal, a specific amount of point will be added to your score
-                    You win the game by matching your score to the random number.
-                    You lose if your score is more than the random number.
-                    The value of each crystal is hidden until you click on it.
-                    When the game starts, the game will change the value of each crystal.</p>                    
+                        <p>You will be given a "Number To Match" at the start of the game. 
+                            Each crystal is equal to a different number, click on the 
+                            crystals to have your "Total" equal the "Number To Match".
+                            If your score is more than the random number then you lose the 
+                            game, the game will reset with your total and random number.
+                            With the new game each crystal will be added to reach the new
+                            random number. A little secret, the value of each crystal is hidden 
+                            until you click on it. When a new game starts the value of each crystal
+                            will change, GOOD LUCK!
+                        </p>                    
                     </div>
                 </div>
                 <div class="card match">
@@ -43,10 +48,10 @@
                 <div class="card crystal-card">
                     <div class="card-body">
                         <div class="crystals">
-                            <img src="./assets/images/purple-crystal.jpg" class="image" id="purple">
-                            <img src="./assets/images/pink-crystal.jpg" class="image" id="pink">
-                            <img src="./assets/images/orange-crystal.jpg" class="image" id="orange">
-                            <img src="./assets/images/blue-crystal.jpg" class="image" id="blue">
+                            <img src="./assets/images/purple-crystals.png" class="image" id="purple">
+                            <img src="./assets/images/pink-crystals.png" class="image" id="pink">
+                            <img src="./assets/images/orange-crystals.png" class="image" id="orange">
+                            <img src="./assets/images/blue-crystals.png" class="image" id="blue">
                         </div>
                     </div>
                   </div>
@@ -66,54 +71,5 @@
             </div>
           </div>
     </div>
-<!-- <div class="Header">
-    <h1>The Crystal Collector</h1>
-</div>
-<div class="Directions">
-    <h2>The Rules</h2>
-    <br>
-    <ol>
-        <p>You will be given a random number at the start of the game.<span>"Number to Get"</span></p>
-        <p>Here are four crystals right below. GOOD LUCK!</p>
-    <br>
-        <ul>
-                <li id="purple">Purple</li>
-                <li id="pink">Pink</li>
-                <li id="orange">Orange</li>
-                <li id="blue">Blue</li>        
-        </ul>
-        <br>
-        <p>Clicking on the crystal, a specific amount of point will be added to your score</p>
-        <p>You win the game by matching your score to the random number.</p>
-        <p>You lose if your score is more than the random number.</p>
-        <p>The value of each crystal is hidden until you click on it.</p>
-        <p>When the game starts, the game will change the value of each crystal.</p>
-    </ol>
-</div>
-<div class="crystals">
-        <img src="./assets/images/purple-crystal.jpg" class="Image" id="purple">
-        <img src="./assets/images/pink-crystal.jpg" class="Image" id="pink">
-        <img src="./assets/images/orange-crystal.jpg" class="Image" id="orange">
-        <img src="./assets/images/blue-crystal.jpg" class="Image" id="blue">
-    </div>
-<div class="Match">
-    <h2>Number to Match:
-        <span id="random"></span>
-    </h2>
-</div>
-<div class="WinandLosses">
-    <h2>Wins:
-        <span id="Wins"></span>
-        <br>
-        <br>
-        Losses:
-        <span id="Losses"></span>
-    </h2>
-</div>
-<div class="Total">
-    <h3>Total Score:
-        <span id="Totalscore"></span>
-    </h3>
-</div> -->
 </body>
 </html>

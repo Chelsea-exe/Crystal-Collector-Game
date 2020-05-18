@@ -27,7 +27,10 @@ body {
 .jumbotron-fluid {
     background-color: rgb(84, 156, 224);
 }
-
+.crystal-jumbotron {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
 .header {
     color: white;
     font-family: 'Playfair Display', serif;
@@ -39,6 +42,7 @@ body {
 }
 .summary-body {
     font-family: 'Quicksand', sans-serif;
+    padding-left: 5px;
 }
 h1, h2, h3, h4, span{
     font-weight: bold;
@@ -50,18 +54,28 @@ ul{
     list-style: inside;
 }
 .crystal-card {
-    background-color: rgb(241, 240, 241);
+    background-color: rgb(226, 248, 237);
+}
+.crystals {
+    margin-left: 30px;
 }
 .image{
-    height: 9vh;
-    margin-left: 8px;
+    height: 14vh;
     cursor: pointer;
+}
+#pink,
+#blue {
+    margin-left: 60px;
+}
+#second {
+    margin-left: 150px;
 }
 .directions{
     width: fit-content;
 }
 .card-header,
-.board-header {
+.board-header,
+.scoreboard {
     background-color: rgb(226, 248, 237);
 }
 .match {
@@ -69,29 +83,35 @@ ul{
     margin-top: 20px;
 }
 .match-body {
-    background-color: rgb(252, 218, 126);
+    background-color: rgb(255, 227, 152);
 }
 #random {
     font-family: 'Quicksand', sans-serif;
 }
+.board-header {
+    margin-bottom: 5px;
+}
 .scoreboard {
     margin-top: 20px;
-    background-color: rgb(241, 240, 241);
 }
 #score-header {
     font-family: 'Playfair Display', serif; 
-    margin-left: 15px;  
+    margin-left: 15px;
+    margin-top: 10px;  
 }
 .score-body {
     background-color: rgba(0, 255, 255, 0);
 }
 .win-loss {
     font-family: 'Quicksand', sans-serif;
-    background-color: rgb(255, 181, 224);
+    background-color: rgb(255, 200, 232);
 }
 #winboard,
 #lossboard {
     font-weight: bold;
+}
+#lossboard {
+    margin-top: 25px;
 }
 #total {
     margin-left: 20px;

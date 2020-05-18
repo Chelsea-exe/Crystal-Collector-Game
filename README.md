@@ -1,5 +1,10 @@
-# Trivia-Game
-I realized on this past Saturday that I submitted the Trivia Game as the Crystal Collector game. I spoke with Crystal about it and she told me to submit this assignment this week since I messed up.
-This is my Crystal Collectors game.
-You will be given a random number at the start of the game."Number to Get"
-Here are four crystals right below. GOOD LUCK!
+# Crystal-Collector-Game
+You will be given a "Number To Match" at the start of the game. 
+Each crystal is equal to a different number, click on the 
+crystals to have your "Total" equal the "Number To Match".
+If your score is more than the random number then you lose the 
+game, the game will reset with your total and random number.
+With the new game each crystal will be added to reach the new
+random number. A little secret, the value of each crystal is hidden 
+until you click on it. When a new game starts the value of each crystal will change, GOOD LUCK!
+<img src="../assets/images/read-me-update.png"></img>
