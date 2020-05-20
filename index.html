@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Quicksand&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    <!-- <script type="text/javascript" src="./assets/javascript/game.js"></script> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Crystal Game</title>
@@ -71,5 +70,138 @@
             </div>
           </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript">
+         //setting global variables when the page loads
+    var total = 0;
+    var wins = 0;
+    var losses = 0;
+
+    var randomNum = Math.floor(Math.random()*139+11);
+ //setting "Number to Match" for game random number between 11-150
+
+    var gamePurple = Math.floor(Math.random()*15+10);
+    var gamePink = Math.floor(Math.random()*15+10);
+    var gameOrange = Math.floor(Math.random()*15+10);
+    var gameBlue = Math.floor(Math.random()*15+10);
+ //setting the values for each crystals to any random number between 10-25
+
+
+
+    $(document).ready(function() {
+        // alert("page is loaded");
+
+  $('#random').html(randomNum);
+  $('#wins').html(wins);
+  $('#losses').html(losses);
+  $('#totalscore').html(total);
+    //using Jquery the set variables will be plugged into the html page in the associated div.
+
+  function gameWinner() {
+      wins++;
+      $('#wins').html(wins);
+      alert("Congrats you won the Crystal Collecting game");
+      gameReset();
+  }
+  //gameWinner function is when the user and the computer generated number matches and the function will act
+  //a alert will pop up stating the user won and the gameReset function will start.
+
+
+  function gameLoser() {
+      losses++;
+      $('#losses').html(losses);
+      alert("Sorry you lost the Crystal Collecting game");
+      gameReset();
+
+  }
+  //gameLoser function is when the user number and the computer generated number doesn't match.
+  //a alert will pop up stating the user lost the game and the gameReset function will start.
+
+  function gameReset() {
+    randomNum = Math.floor(Math.random()*139+11);
+    $('#random').html(randomNum);
+    gamePurple = Math.floor(Math.random()*15+10);
+    gamePink = Math.floor(Math.random()*15+10);
+    gameOrange = Math.floor(Math.random()*15+10);
+    gameBlue = Math.floor(Math.random()*15+10);
+
+  }
+  //gameReset function when the game is over the computer will generate a new random number between 11-150
+  //then plugging that random number into the html with the DOM of Jquery and the crystals numbers are set
+  //to new number set between 10-25
+
+
+  $('#purple').click(function() {
+    total = total + gamePurple;
+    $('#totalscore').html(total);
+    if (total === randomNum) {
+        gameWinner();
+        gameReset();
+
+    }
+    else if (total >= randomNum) {
+        gameLoser();
+        gameReset();
+    }
+    // console.log("purple crystal was tallied")
+    // console.log(gamePurple)
+  })
+
+  $('#pink').click(function() {
+      total = total + gamePink;
+      $('#totalscore').html(total);
+      if (total === randomNum) {
+          gameWinner();
+          gameReset();
+
+      }
+      else if (total > randomNum) {
+          gameLoser();
+          gameReset();
+
+      }
+    //   console.log("pink crystal was tallied")
+    //   console.log(gamePink);
+  })
+  
+  $('#orange').click(function() {
+      total = total + gameOrange;
+      $('#totalscore').html(total);
+      if (total === randomNum) {
+          gameWinner();
+          gameReset();
+
+      }
+      else if (total > randomNum) {
+          gameLoser();
+          gameReset();
+
+      }
+    //   console.log("orange crystal was tallied")
+    //   console.log(gameOrange);
+  })
+
+  $('#blue').click(function() {
+      total = total + gameBlue;
+      $('#totalscore').html(total);
+      if (total === randomNum) {
+          gameWinner();
+          gameReset();
+
+      }
+      else if (total > randomNum) {
+          gameLoser();
+          gameReset();
+
+      }
+    //   console.log("blue crystal was taliied")
+    //   console.log(gameBlue);
+  })
+
+  /*with each set of crystals a on click function is set using Jquery and if, else if statements
+   and the following functions will run. */
+
+ });
+    </script>
 </body>
 </html>
